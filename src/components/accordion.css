@@ -1,0 +1,23 @@
+
+.catalog-tree-section-card {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -.1px;
+    color: gray;
+}
+.catalog-tree-section-card-title {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.catalog-tree-section-card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
+  gap: 14px;
+}
+
+

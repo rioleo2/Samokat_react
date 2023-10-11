@@ -1,13 +1,207 @@
-body {
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  text-decoration: none;
 }
+
+body {
+  background-color: #f2f2f2;
+}
+
+.root-section {
+  padding: 0px 10px 10px 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.aside-left-menu {
+  width: 100%;
+  max-width: 236px;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-menu-sticky {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+.logo {
+  padding: 25px 0 16px 16px;
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+}
+
+.catalog-tree {
+  display: flex;
+  flex-direction: column;
+  padding: 25px 0 16px 16px;
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 10px;
+
+}
+
+.catalog-tree-section-card {
+  padding-bottom: 20px;
+}
+
+
+.main-content {
+  margin-right: 10px;
+  max-width: 1144px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-header-sticky {
+  padding-top: 10px;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+  background-color: #f1f1f1;
+}
+
+.search-header {
+  display: flex;
+  height: 80px; 
+  padding: 16px;
+  background-color: white;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+
+}
+
+.search-content {
+  background-color: white;
+  min-height: 200vh;
+}
+
+.search-input {
+  border: none;
+  width: 100%;
+  font-size: 14px;
+  outline: none;
+  background-color: #f2f2f2;
+  border-radius: 100px;
+  padding: 0 44px;
+}
+
+.promo-categories {
+  width: 100%;
+}
+
+
+.swiper {
+  width: 100%;
+  display: flex;
+  padding: 0 10px;
+  gap: 8px;
+}
+
+.promo-categories-card {
+  flex: 1 1;
+  height: auto;
+  overflow: hidden;
+  flex-direction: column;
+  display: flex;
+  border-radius: 20px;
+  position: relative;
+}
+
+.card-title {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  top: 0;
+  color: white;
+  font-size: 16px;
+  padding: 12px;
+  font-weight: 700;
+  background: linear-gradient(0deg,transparent,rgba(0,0,0,.003) 6.67%,rgba(0,0,0,.014) 13.33%,rgba(0,0,0,.033) 20%,rgba(0,0,0,.059) 26.67%,rgba(0,0,0,.093) 33.33%,rgba(0,0,0,.133) 40%,rgba(0,0,0,.177) 46.67%,rgba(0,0,0,.223) 53.33%,rgba(0,0,0,.267) 60%,rgba(0,0,0,.307) 66.67%,rgba(0,0,0,.341) 73.33%,rgba(0,0,0,.367) 80%,rgba(0,0,0,.386) 86.67%,rgba(0,0,0,.397) 93.33%,rgba(0,0,0,.4));
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.best-price-section {
+  padding: 10px 10px;
+}
+
+.best-price-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -.6px;
+  margin-bottom: 10px;
+}
+
+.best-price-cards {
+  display: flex;
+  gap: 8px;
+  max-width: 100%;
+}
+
+.best-price-card {
+  width: 100px;
+  height: 100px;
+
+}
+
+.best-price-card-image {
+  height: 100%;
+  width: auto;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+}
+
+.best-price-card-title {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: .02px;
+  color: rgb(89, 89, 89);
+}
+
+.best-price-card-price {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -.1px;
+  color: rgb(255, 51, 95);
+}
+.aside-right-menu {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  width: 100%;
+}
+
+.right-menu-sticky {
+  width: 100%;
+  height: 50%;
+  position: sticky;
+  top: 20px;
+  z-index: 1;
+}
+
+.promo {
+  width: 100%;
+  height: 50%;
+  border-radius: 20px;
+  background-color: white;
+}
+
+
+
+
+
